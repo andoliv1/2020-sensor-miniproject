@@ -54,6 +54,8 @@ async def client(port: int, addr: str, max_packets: int, log_file: Path):
                 print(f"{i} total messages received")
             print(data)
             file.write(data + '\n')
+            file.flush()
+
     file.close()
 
 
