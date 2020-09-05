@@ -37,6 +37,7 @@ async def client(port: int, addr: str, max_packets: int, log_file: Path):
     """
 
     log_file = Path(log_file).expanduser()
+    file = open(log_file, mode='a')
 
     uri = f"ws://{addr}:{port}"
 
@@ -52,6 +53,8 @@ async def client(port: int, addr: str, max_packets: int, log_file: Path):
             if i % 5 == 0:
                 print(f"{i} total messages received")
             print(data)
+            file.write(data + '\n')
+    file.close()
 
 
 if __name__ == "__main__":
