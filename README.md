@@ -17,7 +17,6 @@ If you don't already have Python,
 is a small but powerful Python distribution for MacOS, Windows and Linux.
 The Microsoft
 [Windows Store also has Python](https://www.microsoft.com/en-us/p/python-38/9mssztt1n39l?activetab=pivot:overviewtab).
-Python 3.8 is recommended for this assignment and in general, particularly if you are using a Windows computer.
 
 Websockets are used for this task as they are lightweight and suited to irregular data streams.
 Python
@@ -46,11 +45,9 @@ If you try to run it in a virtual machine or browser-based cloud resource, the c
 Typically sensor prototypes are worked on with a laptop, so that is the suggested use case for this assignment.
 
 
-
 ### Task 0: setup Python websockets
 
 (15 points total for this section)
-
 
 Please "fork" this GitHub repository and place all your assignment responses and results into **Report.md** in your repository.
 By forking this repo, you will be able to more easily integrate any updates I might make to this repo as bugs are discovered or other enhancements are made.
@@ -61,6 +58,8 @@ This package is "cloned" to your computer after forking this repo like:
 ```sh
 git clone https://github.com/username/2020-sensor-miniproject
 ```
+Your project can be synced to updates from the repo by
+[setting this repo as upstream](./Git.md).
 
 The program is setup (including necessary prerequisites) by:
 
@@ -101,11 +100,19 @@ Normally we would store the retrieved data into a database.
 However here since we're just testing for a fixed amount of time and this is a short assignment, we just store the JSON data to a file as-is, line by line as they come in.
 
 Python file operations are generally done via
-[open()](https://docs.python.org/3/library/functions.html#open)
-and can use syntax like:
+[pathlib](https://docs.python.org/3/library/pathlib.html#pathlib.Path.open).
+Example snippet:
 
 ```python
-file = open("myfile.txt", mode="a")
+from pathlib import Path
+
+# other code; argparse sets P.log value from command line as in ws_client.py
+
+filename = Path(P.log).expanduser()
+
+# other code
+
+file = filename.open("a")
 
 # other code
 
@@ -135,10 +142,10 @@ Typically when analyzing data, whether simulated or from real sensors, we use an
 Popular numeric libraries for Python include:
 
 * [Numpy](https://numpy.org) (underlies most engineering and science Python packages)
-* [Pandas](https://pandas.pydata.org/) (data science with large heterogeneous 1D and 2D data)
-* [Xarray](http://xarray.pydata.org/) (N-dimensional data science)
+* [Pandas](https://pandas.pydata.org) (data science with large heterogeneous 1D and 2D data)
+* [Xarray](https://xarray.pydata.org) (N-dimensional data science)
 
-To keep things simple, for this miniproject I think Pandas is adequate as using Xarray assumes one is already experience with Pandas.
+To keep things simple, for this miniproject I think Pandas is adequate as using Xarray assumes one is already experienced with Pandas.
 I don't think Xarray is necessary for this miniproject.
 
 #### Task 2 points
@@ -155,11 +162,10 @@ I don't think Xarray is necessary for this miniproject.
 This coding would take place in a separate program (not within ws_client.py).
 This is to make things simpler since asynchronous programming requires specific syntax and practices that complicate things in a short project like this.
 
-
 (25 points total for this section)
 
-* implement an algorithm that detects anomalies in sensor data
-* Does a persistent change in these sensor statistics always indicate a failed sensor?
+* implement an algorithm that detects anomalies in **temperature** sensor data
+* Does a persistent change in temperature always indicate a failed sensor?
 * What are possible bounds on temperature for each room type?
 
 ### Task 4: Conclusions
@@ -176,3 +182,26 @@ Some points to think about:
 * how is this simulation deficient? What factors does it fail to account for?
 * how is the difficulty of initially using this Python websockets library as compared to a compiled language e.g. [C++ websockets](https://github.com/facundofarias/awesome-websockets#c-1)
 * would it be better to have the server poll the sensors, or the sensors reach out to the server when they have data?
+
+## Troubleshooting
+
+See [Python.md](./Python.md) for how to switch Python versions.
+
+### ws_client
+
+> in create_connection
+>     raise OSError('Multiple exceptions: {}'.format(
+> OSError: Multiple exceptions: [Errno 61] Connect call failed ('::1', 8765, 0, 0), [Errno 61] Connect call failed ('127.0.0.1', 8765)
+
+This typically indicates that ws_server.py isn't running (or wasn't fully started when ws_client.py was started).
+When running, the terminal where you typed
+
+```sh
+python ws_server.py
+```
+
+will print:
+
+```
+SERVER: port 8765
+```
