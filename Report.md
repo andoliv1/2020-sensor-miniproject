@@ -1,6 +1,25 @@
 # Senior Design 2020 Sensor Miniproject
 Collaborators: Andreas Francisco, Nnenna Eze
 
+## Task 1: Data Flow
+The greeting string issued by the server to the client upon first connecting is "ECE Senior Capstone IoT Simulator"
+
+## Task 2: Analysis
+The median observed from the temperature data is:
+The variance observed from the temperature data is:
+
+The median observed from the occupancy data is:
+The variance observed from the occupancy data is:
+
+Probability Distribution Function Plot for Temperature Sensor:
+
+Probability Distribution Function Plot for Occupany Sensor:
+
+The mean of the timer interval for the sensors is:
+The variance of the timer interval for the sensors is:
+
+Probability Distribution Function Plot for Time Intervals:
+
 ## Questions to think about:
 1. How is this simulation reflective of the real world?
 2. How is this simulation deficient? What factors does it faill to account for?
