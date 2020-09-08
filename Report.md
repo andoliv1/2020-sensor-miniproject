@@ -6,9 +6,11 @@ The greeting string issued by the server to the client upon first connecting is 
 
 ## Task 2: Analysis
 The median observed from the temperature data is:
+
 The variance observed from the temperature data is:
 
 The median observed from the occupancy data is:
+
 The variance observed from the occupancy data is:
 
 Probability Distribution Function Plot for Temperature Sensor:
@@ -16,6 +18,7 @@ Probability Distribution Function Plot for Temperature Sensor:
 Probability Distribution Function Plot for Occupany Sensor:
 
 The mean of the timer interval for the sensors is:
+
 The variance of the timer interval for the sensors is:
 
 Probability Distribution Function Plot for Time Intervals:
