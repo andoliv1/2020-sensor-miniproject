@@ -5,13 +5,31 @@ Collaborators: Andreas Francisco, Nnenna Eze
 The greeting string issued by the server to the client upon first connecting is "ECE Senior Capstone IoT Simulator"
 
 ## Task 2: Analysis
-The median observed from the temperature data is:
+The median observed from the temperature data for class1 is: 26.944
 
-The variance observed from the temperature data is:
+The median observed from the temperature data for office is: 22.996
 
-The median observed from the occupancy data is:
+The median observed from the temperature data for lab1 is: 21.006
 
-The variance observed from the occupancy data is:
+The variance observed from the temperature data for class1 is: 32.765
+
+The variance observed from the temperature data for office is: 8898.989
+
+The variance observed from the temperature data for lab1 is: 50.665
+
+
+The median observed from the occupancy data for class1 is: 19
+
+The median observed from the occupancy data is for office is: 2
+
+The median observed from the occupancy data is for lab1 is: 5
+
+The variance observed from the occupancy data is for class1 is: 19.3
+
+The variance observed from the occupancy data is for class1 is: 1.9
+
+The variance observed from the occupancy data is for class1 is: 5.0
+
 
 Probability Distribution Function Plot for Temperature Sensor:
 
