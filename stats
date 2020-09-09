@@ -1,0 +1,30 @@
+0.998251 -> time interval mean 
+1.056720264961 -> time interval std
+
+temperature --
+lab1      21.002831
+class1    26.988193
+office    22.988713
+dtype: float64
+lab1        18.534187
+class1    1907.986557
+office     405.962057
+dtype: float64
+occupancy --
+lab1       5.0
+class1    19.0
+office     2.0
+dtype: float64
+lab1       5.087795
+class1    19.459503
+office     2.015840
+dtype: float64
+co2 --
+lab1       9.637342
+class1    29.587737
+office     4.752631
+dtype: float64
+lab1       9.505134
+class1    30.486959
+office     5.159033
+dtype: float64
