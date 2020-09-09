@@ -51,13 +51,26 @@ if __name__ == "__main__":
     file = Path(P.file).expanduser()
 
     data = load_data(file)
-
+    
     for k in data:
-        # data[k].plot()
+        data[k].plot()
+        # this is for part c of the question I have not yet been able to plot the density function of the timedelta intervals
         time = data[k].index
+        time_np = time[1:] - time[:-1]
+        time_np_series = time_np.total_seconds()
+        print(type(time_np_series))
+        print(time_np.mean().total_seconds())
+        print(pow(np.std(time_np).total_seconds(),2))
+
         data[k].hist()
         plt.figure()
         plt.hist(np.diff(time.values).astype(np.int64) // 1000000000)
         plt.xlabel("Time (seconds)")
+
+        # median of data[k] and var of data[k] which is letter a)b) of task 2
+        print(data[k].median())
+        print(data[k].var())
+        #density function of each sensor type which is letter c) of task 2
+        data[k].plot.density()
 
     plt.show()
