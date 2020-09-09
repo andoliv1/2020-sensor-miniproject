@@ -23,9 +23,9 @@ Probability Distribution Function Plot for Temperature Sensor:
 
 Probability Distribution Function Plot for Occupany Sensor:
 
-The mean of the timer interval for the sensors is:
+The mean of the timer interval for the sensors is: 1.025027
 
-The variance of the timer interval for the sensors is:
+The variance of the timer interval for the sensors is: 1.0242775883559998
 
 Probability Distribution Function Plot for Time Intervals:
 
