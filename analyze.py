@@ -78,8 +78,14 @@ if __name__ == "__main__":
         data[k].plot.density()
         plt.xlabel(k)
         plt.ylabel("Probability")
-        plt.title("PDF plot of each sensor type in each room type")
+        plt.title("PDF plot of " + str(k))
         plt.savefig("PDF_" + k + ".png")
+
+        data[k].hist()
+        plt.xlabel(k)
+        plt.ylabel("Quantity")
+        plt.title("Histogram for " + str(k))
+        plt.savefig("Histogram_" + str(k) + ".png")
 
 
     plt.show()
