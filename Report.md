@@ -7,27 +7,40 @@ The greeting string issued by the server to the client upon first connecting is 
 ## Task 2: Analysis
 Temperature | Median | Variance
 ------------|--------|---------
-Class 1 | 26.944 | 32.765
-Office | 22.996 | 8898.989
-Lab1 | 21.006 | 50.665
+Class 1 | 26.988 | 1907.987
+Office | 22.988 | 405.962
+Lab1 | 21.002 | 18.533
 
 Occupancy | Median | Variance
 ----------|--------|---------
-Class1 | 19 | 19.3
-Office | 2 | 1.9
+Class1 | 19 | 19.5
+Office | 2 | 2.0
 Lab1 | 5 | 5.0
 
 
 
-Probability Distribution Function Plot for Temperature Sensor:
+**Probability Distribution Function Plot for Temperature Sensor:**
 
-Probability Distribution Function Plot for Occupany Sensor:
+<img src="https://user-images.githubusercontent.com/44929220/92656877-d129aa00-f2c1-11ea-82dd-744e2deb4ff2.png" width="500" height="500">
 
-The mean of the timer interval for the sensors is:
+**Probability Distribution Function Plot for Occupany Sensor:**
 
-The variance of the timer interval for the sensors is:
+<img src="https://user-images.githubusercontent.com/44929220/92656932-e69ed400-f2c1-11ea-8318-c67c01921fb9.png" width="500" height="500">
 
-Probability Distribution Function Plot for Time Intervals:
+**Probability Distribution Function Plot for CO2 Sensor:**
+
+<img src="https://user-images.githubusercontent.com/44929220/92656956-f3bbc300-f2c1-11ea-98da-cdbacbef7ca1.png" width="500" height="500">
+
+
+The mean of the timer interval for the sensors is: 1.025027
+
+The variance of the timer interval for the sensors is: 1.0242775883559998
+
+**Probability Distribution Function Plot for Time Intervals:**
+
+<img src="https://user-images.githubusercontent.com/44929220/92656972-fc13fe00-f2c1-11ea-82e1-16766291f34f.png" width="500" height="500">
+
+
 
 ## Task 3: Design
 
