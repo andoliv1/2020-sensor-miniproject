@@ -11,11 +11,15 @@ The greeting string issued by the server to the client upon first connecting is 
 Temperature | Median | Variance
 ------------|--------|---------
 Office | 22.988 | 405.962
+Lab1 | 21.002 | 18.435
+Class1 | 26.988 | 1907.989
 
 2. 
 Occupancy | Median | Variance
 ----------|--------|---------
 Office | 2 | 2.0
+Lab1 | 5 | 5
+Class1 | 19 | 19.45 
 
 3. 
 * run python task3.py data
@@ -52,10 +56,9 @@ This mimics an erlang distribution which is used to simulate waiting times for i
 
 
 ## Task 3: Design
-1. 
-This is the percentage of bad data in office 1.5552995391705071
-This is the median after removed points 22.988651867570866 for temperature at office
-This is the variance after removed points 0.8887471326179444 for temperature at office
+1. This is the percentage of bad data in office 1.5552995391705071. 
+This is the median after removed points 22.988651867570866 for temperature at office. 
+This is the variance after removed points 0.8887471326179444 for temperature at office.
 
 2. It depends on what you classify as a persistent change, if by a persistent change you mean consistent large fluctuations of temperature then intuitively it would indicate failure since we don't observe large fluctuations of temperature normally in a room, unless you are directly pointing in and out a heat source to the sensor. On the other hand if by persitent change you mean a gradual decrease/increase in temperature due a heat source being turned on then it would not indicate a failure of the sensor.
 
