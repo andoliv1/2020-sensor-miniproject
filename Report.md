@@ -74,11 +74,11 @@ This is the variance after removed points 0.8887471326179444 for temperature at 
 
 ## Questions to think about for Task 4:
 1. How is this simulation reflective of the real world?
-
+The temperature simulation is very accurate since the fluctuation is small and usually focused on a certain temperature which mimics how a rooom's temperature would behave controlled by a heating source. On the matter of the occupancy data the number of people never really goes to abnormal quantities and stays within boundaries of what is expected to have in a room. (PLEASE COMMENT ON CO2 AND IF YOU WANT CHANGE WHAT I HAVE PUT)
 2. How is this simulation deficient? What factors does it faill to account for?
 It doesn't take it to account that the temperatures at night should be lower since heat sources are usually turned off and occupancy goes down.
 3. Difficulty of Python websockets library vs compiled languages
-Overall I don't think it was hard to work with the python websockets library.
+Overall I don't think it was hard to work with the python websockets library, mainly just had to install miniconda and when running the conda 
 4. Would it be better to have server poll sensors or sensors reach out to server when they have data?
 In terms of CPU usage you would be better of polling sensors since you know when you want to fetch for data and when you are not doing so you can save energy but if the sensors reach out to the server you have to keep it on to wait for the request and that will consume energy. On the other hand in terms of getting data you would be better waiting for the sensors to reach out to the server since as it was observed in task 2 if you do in the first way you will be requesting data when there is no data at the server and that can also can be expensive. Overall, both sides have its downsides and in order to know which method to use the designer of the system should make an expect cost analysis between what costs him more: requesting for data when there's none or having the system on and waiting for data to be sent.
 
