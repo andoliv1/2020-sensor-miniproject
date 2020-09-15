@@ -20,7 +20,7 @@ def detect_anomaly( log_file :Path):
                 try:
                     temp = p.get('office').get('temperature')
                     temp_std = math.sqrt(18)
-                    temp_mean = 21
+                    temp_mean = 22.28
                     # print(temp[0])
                     if(temp[0] >  temp_mean + 2*temp_std):
                         print("This is an outlier at office and this is the temp recorded " + str(temp[0]))
@@ -34,7 +34,7 @@ def detect_anomaly( log_file :Path):
                         temp = p.get('lab1').get('temperature')
                         # occupancy = p.get('lab1').get('occupancy')
                         temp_std = math.sqrt(1908)
-                        temp_mean = 26.98
+                        temp_mean = 20.97
                         # print(temp)
                         if(temp[0] >  temp_mean + 2*temp_std):
                             print("This is an outlier at lab1 and this is the temp recorded " + str(temp[0]))
@@ -47,7 +47,7 @@ def detect_anomaly( log_file :Path):
                         temp = p.get('class1').get('temperature')
                         # occupancy = p.get('class1').get('occupancy')
                         temp_std = math.sqrt(406)
-                        temp_mean = 23
+                        temp_mean = 27.847330
                         # print(temp)
                         if(temp[0] >  temp_mean + 2*temp_std):
                             print("This is an outlier at class1 and this is the temp recorded " + str(temp[0]))
