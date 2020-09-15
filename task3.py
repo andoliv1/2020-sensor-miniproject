@@ -63,20 +63,6 @@ if __name__ == "__main__":
     file = Path(P.file).expanduser()
 
     data = load_data(file)
-    # time = data["temperature"].index
-    # time_np = time[1:] - time[:-1]
-    # time_np_series = time_np.total_seconds()
-    # print(time_np.mean().total_seconds())
-    # print(pow(np.std(time_np).total_seconds(),2))
-
-
-    # time_np_series = time_np_series.to_frame(index = False)
-    # time_np_series.plot.density()
-    # plt.xlabel("Time intervals (seconds)")
-    # plt.ylabel("Probability")
-    # plt.title("PDF plot of the time intervals")
-    # plt.savefig("PDF_time_intervals.png")
-
 
     for k in data:
         # this is for part c of the question I have not yet been able to plot the density function of the timedelta intervals
