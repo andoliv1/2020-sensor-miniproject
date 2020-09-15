@@ -57,8 +57,7 @@ The variance of the timer interval for the sensors is: 1.056720264961
 
 <img src="https://user-images.githubusercontent.com/44929220/92656972-fc13fe00-f2c1-11ea-82e1-16766291f34f.png" width="500" height="500">
 
-This mimics an erlang distribution which is used to simulate waiting times for independent and identically distributed random variables, for example poisson variables are used to simulate bus arrivals and the waiting time between buses are simulated by erlang so you could say it is a well-know distribution for large systems.
-
+This mimics an erlang distribution which is used to simulate waiting times for independent and identically distributed random variables and since iid variables can be used to simulate large systems it implies the time intervals do mimic waiting times for large systems.
 
 
 ## Task 3: Design
