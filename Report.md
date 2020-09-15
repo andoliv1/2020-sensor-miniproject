@@ -5,7 +5,7 @@ Collaborators: Andreas Francisco, Nnenna Eze
 The greeting string issued by the server to the client upon first connecting is "ECE Senior Capstone IoT Simulator"
 
 ## Task 2: Analysis
-* run python analyze_2.py data
+* run python task2.py data (this will only get the office median and variance)
 
 1. 
 Temperature | Median | Variance
@@ -22,7 +22,8 @@ Lab1 | 5 | 5
 Class1 | 19 | 19.45 
 
 3. 
-* run python task3.py data
+* run python task3.py data (To detect the anomalies and the find out mean and var after having anomalies removed)
+* run python detecting_anomalies_in_real_time.py $file_name$ (To continously detect anomalies being placed in a file by ws_client.py and then printing them out)
 **Probability Distribution Function Plot for Temperature Sensor:**
 
 <img src="https://user-images.githubusercontent.com/44929220/92656877-d129aa00-f2c1-11ea-82dd-744e2deb4ff2.png" width="500" height="500">
