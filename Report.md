@@ -11,11 +11,15 @@ The greeting string issued by the server to the client upon first connecting is 
 Temperature | Median | Variance
 ------------|--------|---------
 Office | 22.988 | 405.962
+Lab1 | 21.002 | 18.435
+Class1 | 26.988 | 1907.989
 
 2. 
 Occupancy | Median | Variance
 ----------|--------|---------
 Office | 2 | 2.0
+Lab1 | 5 | 5
+Class1 | 19 | 19.45 
 
 3. 
 * run python task3.py data
@@ -25,18 +29,23 @@ Office | 2 | 2.0
 
 **Histogram Plot for Temperature Sensor:**
 
+<img src="https://user-images.githubusercontent.com/44929220/93241645-a3c27d80-f753-11ea-8134-ca5f0948b4a1.png" width="500" height="500">
+
 **Probability Distribution Function Plot for Occupany Sensor:**
 
 <img src="https://user-images.githubusercontent.com/44929220/92656932-e69ed400-f2c1-11ea-8318-c67c01921fb9.png" width="500" height="500">
 
 **Histogram Plot for Occupancy Sensor:**
 
+<img src="https://user-images.githubusercontent.com/44929220/93241614-9a391580-f753-11ea-8b71-b0720ff16528.png" width="500" height="500">
+
 **Probability Distribution Function Plot for CO2 Sensor:**
 
 <img src="https://user-images.githubusercontent.com/44929220/92656956-f3bbc300-f2c1-11ea-98da-cdbacbef7ca1.png" width="500" height="500">
 
 **Histogram Plot for CO2 Sensor:**
-![alt text](https://github.com/[nnennaeze07]/[2020-sensor-miniproject]/blob/[main]/Histogram_co2.jpg?raw=true)
+
+<img src="https://user-images.githubusercontent.com/44929220/93241552-7bd31a00-f753-11ea-8f0c-e1d2ffe98b8d.png" width="500" height="500">
 
 4. 
 The mean of the timer interval for the sensors is: 0.998251
@@ -52,10 +61,9 @@ This mimics an erlang distribution which is used to simulate waiting times for i
 
 
 ## Task 3: Design
-1. 
-This is the percentage of bad data in office 1.5552995391705071
-This is the median after removed points 22.988651867570866 for temperature at office
-This is the variance after removed points 0.8887471326179444 for temperature at office
+1. This is the percentage of bad data in office 1.5552995391705071. 
+This is the median after removed points 22.988651867570866 for temperature at office. 
+This is the variance after removed points 0.8887471326179444 for temperature at office.
 
 2. It depends on what you classify as a persistent change, if by a persistent change you mean consistent large fluctuations of temperature then intuitively it would indicate failure since we don't observe large fluctuations of temperature normally in a room, unless you are directly pointing in and out a heat source to the sensor. On the other hand if by persitent change you mean a gradual decrease/increase in temperature due a heat source being turned on then it would not indicate a failure of the sensor.
 
