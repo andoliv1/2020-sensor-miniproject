@@ -29,18 +29,23 @@ Class1 | 19 | 19.45
 
 **Histogram Plot for Temperature Sensor:**
 
+<img src="https://user-images.githubusercontent.com/44929220/93241645-a3c27d80-f753-11ea-8134-ca5f0948b4a1.png" width="500" height="500">
+
 **Probability Distribution Function Plot for Occupany Sensor:**
 
 <img src="https://user-images.githubusercontent.com/44929220/92656932-e69ed400-f2c1-11ea-8318-c67c01921fb9.png" width="500" height="500">
 
 **Histogram Plot for Occupancy Sensor:**
 
+<img src="https://user-images.githubusercontent.com/44929220/93241614-9a391580-f753-11ea-8b71-b0720ff16528.png" width="500" height="500">
+
 **Probability Distribution Function Plot for CO2 Sensor:**
 
 <img src="https://user-images.githubusercontent.com/44929220/92656956-f3bbc300-f2c1-11ea-98da-cdbacbef7ca1.png" width="500" height="500">
 
 **Histogram Plot for CO2 Sensor:**
-![alt text](https://github.com/[nnennaeze07]/[2020-sensor-miniproject]/blob/[main]/Histogram_co2.jpg?raw=true)
+
+<img src="https://user-images.githubusercontent.com/44929220/93241552-7bd31a00-f753-11ea-8f0c-e1d2ffe98b8d.png" width="500" height="500">
 
 4. 
 The mean of the timer interval for the sensors is: 0.998251
