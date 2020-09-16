@@ -71,7 +71,7 @@ This is the variance after removed points: 0.8887471326179444 for temperature at
 
 
 
-## Questions to think about for Task 4:
+## Task 4: Conclusions
 1. How is this simulation reflective of the real world?
 Sensors such as the three focused on during this project are used in many different ways in the real world. For example, the temperature sensor is common in office spaces or households to control the heat and AC systems. The occupancy sensor is also common, especially in light systems that monitor when rooms are empty in order to turn off the lights. CO2 sensors are important for ventilation systems, that turn on and off on their own based on the CO2 levels in a building. Many of these sensors work together, and are included in building spaces. In particular sustainable buildings, which have automated light systems and AC units. Of course, there are some aspects of these simulated sensors that do not reflective real world practices, such as the server retrieving the data from all three sensors at relatively the same time. 
 
